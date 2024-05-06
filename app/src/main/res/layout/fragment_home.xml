@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.fragment.HomeFragment">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/translationOfQuran"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginHorizontal="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        app:layout_constraintHeight_percent="0.3"
+        android:padding="@dimen/_10sdp"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <ImageView
+            android:id="@+id/surah_y_img"
+            android:layout_width="0dp"
+            app:layout_constraintHeight_percent="0.3"
+            app:layout_constraintDimensionRatio="1:1"
+            android:layout_height="0dp"
+            android:layout_marginStart="@dimen/_20sdp"
+            app:layout_constraintHorizontal_chainStyle="spread_inside"
+            android:src="@mipmap/ic_launcher"
+            app:layout_constraintEnd_toStartOf="@id/surah_k_img"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+        <TextView
+            android:id="@+id/surah_y_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Surah Yaseen"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toBottomOf="@id/surah_y_img"
+            app:layout_constraintEnd_toEndOf="@id/surah_y_img"
+            app:layout_constraintStart_toStartOf="@id/surah_y_img"
+            />
+
+        <ImageView
+            android:id="@+id/surah_k_img"
+            android:layout_width="0dp"
+            app:layout_constraintHeight_percent="0.3"
+            app:layout_constraintDimensionRatio="1:1"
+            android:layout_height="0dp"
+            app:layout_constraintHorizontal_chainStyle="spread"
+            android:src="@mipmap/ic_launcher"
+            app:layout_constraintEnd_toStartOf="@+id/surah_r_img"
+            app:layout_constraintStart_toEndOf="@+id/surah_y_img"
+            app:layout_constraintTop_toTopOf="@id/surah_y_img"/>
+
+        <TextView
+            android:id="@+id/surah_k_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Surah Kahf"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="@id/surah_k_img"
+            app:layout_constraintEnd_toEndOf="@id/surah_k_img"
+            app:layout_constraintTop_toBottomOf="@id/surah_k_img"
+            />
+
+        <ImageView
+            android:id="@+id/surah_r_img"
+            android:layout_width="0dp"
+            app:layout_constraintHeight_percent="0.3"
+            app:layout_constraintDimensionRatio="1:1"
+            android:layout_height="0dp"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:src="@mipmap/ic_launcher"
+            app:layout_constraintStart_toEndOf="@id/surah_k_img"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+        <TextView
+            android:id="@+id/surah_r_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Surah Rehman"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="@id/surah_r_img"
+            app:layout_constraintTop_toBottomOf="@id/surah_r_img"
+            app:layout_constraintEnd_toEndOf="@id/surah_r_img"
+            />
+
+        <ImageView
+            android:id="@+id/surah_m_img"
+            android:layout_width="0dp"
+            app:layout_constraintHeight_percent="0.3"
+            app:layout_constraintHorizontal_chainStyle="spread_inside"
+            android:layout_marginStart="@dimen/_20sdp"
+            app:layout_constraintDimensionRatio="1:1"
+            android:layout_height="0dp"
+            app:layout_constraintEnd_toStartOf="@id/surah_b_img"
+            android:src="@mipmap/ic_launcher"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/surah_m_text"
+            />
+
+        <TextView
+            android:id="@+id/surah_m_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Surah Mulk"
+            app:layout_constraintEnd_toEndOf="@id/surah_m_img"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@id/surah_m_img"/>
+
+
+        <ImageView
+            android:id="@+id/surah_b_img"
+            android:layout_width="0dp"
+            app:layout_constraintHeight_percent="0.3"
+            app:layout_constraintDimensionRatio="1:1"
+            android:layout_height="0dp"
+            android:src="@mipmap/ic_launcher"
+            app:layout_constraintBottom_toTopOf="@id/surah_b_text"
+            app:layout_constraintStart_toEndOf="@id/surah_m_img"
+            app:layout_constraintEnd_toStartOf="@id/surah_w_img"
+            />
+
+        <TextView
+            android:id="@+id/surah_b_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Surah Baqarah"
+
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@id/surah_b_img"
+            app:layout_constraintEnd_toEndOf="@id/surah_b_img"
+            />
+
+
+        <ImageView
+            android:id="@+id/surah_w_img"
+            android:layout_width="0dp"
+            app:layout_constraintHeight_percent="0.3"
+            app:layout_constraintDimensionRatio="1:1"
+            android:layout_height="0dp"
+            app:layout_constraintStart_toEndOf="@id/surah_b_img"
+            android:src="@mipmap/ic_launcher"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="@dimen/_20sdp"
+            app:layout_constraintBottom_toTopOf="@id/surah_w_text"/>
+        <TextView
+            android:id="@+id/surah_w_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Surah Waqiah"
+            app:layout_constraintStart_toStartOf="@id/surah_w_img"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@id/surah_w_img"
+
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+/>
+</androidx.constraintlayout.widget.ConstraintLayout>
